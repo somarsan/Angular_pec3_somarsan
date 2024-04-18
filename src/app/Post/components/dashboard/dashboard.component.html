@@ -1,0 +1,14 @@
+<div class="textNum" *ngIf="posts">
+  <p>Num likes: {{ numLikes }}</p>
+  <p>Num dislikes: {{ numDislikes }}</p>
+
+  <div class="graphic">
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType">
+    </canvas>
+  </div>
+</div>
